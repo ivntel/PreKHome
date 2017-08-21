@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">PreKHome</string>
+    <string name="language_prompt">Choose a language</string>
+    <string name="age_prompt">Choose age</string>
+
+    <string-array name="language_arrays">
+        <item>English</item>
+        <item>Spanish</item>
+    </string-array>
+
+    <string-array name="age_arrays">
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+</resources>

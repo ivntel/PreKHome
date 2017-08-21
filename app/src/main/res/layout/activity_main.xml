@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ivntel.android.prekhome.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ebooks:"
+        android:layout_below="@+id/spinner1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="9dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Videos:"
+        android:layout_above="@+id/videoRecyclerview"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/language_arrays"
+        android:prompt="@string/language_prompt"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/age_arrays"
+        android:prompt="@string/age_prompt"
+        android:layout_above="@+id/btnSubmit"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="38dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/ebookRecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/spinner1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="26dp" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/videoRecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_above="@+id/spinner2"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="58dp" />
+
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:onClick="submitButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
